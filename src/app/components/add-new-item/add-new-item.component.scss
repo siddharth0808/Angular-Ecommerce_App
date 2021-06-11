@@ -1,0 +1,49 @@
+
+.parent{
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  .child1{
+      width: 20%;
+      height: 605px;
+      background-color: white;
+  }
+  .child2{
+
+    width: 80%;
+    height: 605px;
+    background-color: whitesmoke;
+    color: white;
+    .card{
+      margin: 20px;
+      background-color: rgba(0, 0, 0, 0.493);
+      color: black;
+      label{
+        color: white;
+        font-size: 25px;
+    }
+    form{
+        text-align: center;
+        .choseImg{
+          margin: 10px;
+          padding: 10px;
+        }
+        .full-width{
+            width: 100%;
+            .optColor{
+              background-color: white;
+              color: black;
+            }
+        }
+        .button_field{
+            background-color: black;
+            color: white;
+            width: 100%;
+        }
+    }
+
+
+    }
+
+  }
+}

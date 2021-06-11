@@ -1,0 +1,34 @@
+.parentdiv{
+    display: flex;
+    justify-content: center;
+    padding-bottom:5px ;
+    .childdiv{
+      margin-top: 80px;
+
+        width: 400px;
+        .signUp-card{
+            // margin-top: 20px;
+            // margin-left: 36%;
+            width: auto;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.37);
+            // text-align: center;
+            // position: absolute;
+            padding: 20px;
+            label{
+                color: white;
+                font-size: 25px;
+            }
+            form{
+                text-align: center;
+                .full-width{
+                    width: 100%;
+                }
+                button{
+                    background-color:white;
+                    color:black;
+                }
+            }
+        }
+    }
+}

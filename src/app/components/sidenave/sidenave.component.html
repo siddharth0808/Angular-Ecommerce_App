@@ -1,0 +1,79 @@
+<mat-list class="list">
+  <div
+    class="example-ripple-container mat-elevation-z4 user-div"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+  >
+    <div class="parent">
+      <div class="child1"><mat-icon>account_circle</mat-icon></div>
+      <div class="child2">
+        <label class="profile-div">{{name}}</label><br />
+        <label class="profile-div">{{email}}</label>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="example-ripple-container mat-elevation-z4 ripple-div"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color"
+  >
+    <mat-list-item class="item">Profile</mat-list-item>
+  </div>
+
+  <div
+    class="example-ripple-container mat-elevation-z4 ripple-div"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color"
+  >
+    <mat-list-item class="item">Order history</mat-list-item>
+  </div>
+
+  <div
+    class="example-ripple-container mat-elevation-z4 ripple-div"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color"
+  >
+    <mat-list-item class="item">Notification</mat-list-item>
+  </div>
+  <!-- <div
+    class="example-ripple-container mat-elevation-z4 ripple-div"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color"
+    (click)="addNew()"
+  >
+    <mat-list-item class="item">Add New Item</mat-list-item>
+  </div> -->
+
+  <div
+    class="example-ripple-container mat-elevation-z4 ripple-div"
+    matRipple
+    [matRippleCentered]="centered"
+    [matRippleDisabled]="disabled"
+    [matRippleUnbounded]="unbounded"
+    [matRippleRadius]="radius"
+    [matRippleColor]="color"
+    (click)="logout()"
+  >
+    <mat-list-item class="item">Logout</mat-list-item>
+  </div>
+</mat-list>

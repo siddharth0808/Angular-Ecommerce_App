@@ -1,0 +1,32 @@
+.list{
+   .item{
+    color:black;
+
+    .profile-div{
+      text-align: center;
+      width: 100%;
+      margin: 10px;
+    }
+   }
+}
+.ripple-div{
+  margin-top: 10px;
+  color: black;
+  cursor: pointer;
+}
+.ripple-div:hover{
+  background-color: whitesmoke;
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  .child1{
+    width: 20%;
+
+  }
+  .child2{
+    width: 80%;
+  }
+}

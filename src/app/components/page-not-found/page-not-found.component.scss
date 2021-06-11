@@ -1,0 +1,10 @@
+.parent-div{
+  display: flex;
+  justify-content: center;
+    .child-div{
+      margin-top: 64px;
+      .card{
+            background-color: white;
+        }
+    }
+}

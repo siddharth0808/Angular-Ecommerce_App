@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>{{data.title}}</h2>
+<div mat-dialog-content>
+  <img src={{data.image}} alt="" width="350px" height="250px" />
+  <div class="details">
+    <p class="itemdetails">{{data.category}}</p>
+      <p class="itemdetails">{{data.description}}</p>
+      <p class="itemdetails">{{data.price |currency:"USD"}}</p>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+</div>

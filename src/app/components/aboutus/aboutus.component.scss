@@ -1,0 +1,20 @@
+
+
+.parent-div{
+  display: flex;
+  justify-content: center;
+  padding-bottom:5px ;
+  .child-div{
+
+      margin-top: 10%;
+      width: 1000px;
+      .about-card{
+
+        //margin:50px;
+        background-color:rgba(10, 10, 9, 0.493);
+        border: black;
+        color: white;
+        font-size: 20px;
+    }
+  }
+}

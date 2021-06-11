@@ -1,0 +1,44 @@
+<div class="parent">
+  <div class="child1">
+    <app-sidenave></app-sidenave>
+
+  </div>
+  <div class="child2">
+    <mat-card class="card">
+      <label>Login</label>
+      <form method="POST" #myform="ngForm" [formGroup]="newItemForm" (ngSubmit) = "addNewItem(myform)" >
+        <mat-form-field class="full-width" appearance="outline" color="black">
+          <mat-label>Item Image Url</mat-label>
+          <input type="text" matInput
+         placeholder="https://image.jpg" formControlName="image" autocomplete="off">
+        </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline" color="black">
+            <mat-label>Item Name</mat-label>
+            <input type="text" matInput
+           placeholder="Mens Cotton Jacket" formControlName="title" autocomplete="off">
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline" color="black">
+            <mat-label>Item Price</mat-label>
+            <input type="text" matInput
+           placeholder="100" formControlName="price" autocomplete="off">
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline" color="black">
+            <mat-label>Item Description</mat-label>
+            <input type="text" matInput
+           placeholder="This..........." formControlName="description" autocomplete="off">
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline" color="black">
+            <mat-label>Category</mat-label>
+            <mat-select formControlName="category">
+              <mat-option class="optColor" value="men's clothing">men's clothing</mat-option>
+              <mat-option class="optColor" value="jewelery">jewelery</mat-option>
+              <mat-option class="optColor" value="electronics">electronics</mat-option>
+              <mat-option class="optColor" value="women's clothing">women's clothing</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-raised-button color="warn" class="button_field" >ADD</button>
+
+      </form>
+    </mat-card>
+  </div>
+</div>

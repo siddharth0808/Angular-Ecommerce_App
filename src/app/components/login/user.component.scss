@@ -1,0 +1,33 @@
+.parentdiv{
+    display: flex;
+    justify-content: center;
+    .child-div1{
+        margin-top: 15%;
+        width: 400px;
+        .login-card{
+            // margin-top: 12%;
+            // margin-left: 36%;
+            width: auto;
+            height: auto;
+            // position: absolute;
+           // text-align: center;
+            padding: 25px;
+            background-color: rgba(0, 0, 0, 0.493);
+            label{
+                color: white;
+                font-size: 25px;
+            }
+            form{
+                text-align: center;
+                .full-width{
+                    width: 100%;
+                }
+                .button_field{
+                    background-color: white;
+                    color: black;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

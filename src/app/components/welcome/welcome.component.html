@@ -1,0 +1,37 @@
+<div class="parent-div">
+  <div class="child-div1">
+    <app-sidenave></app-sidenave>
+  </div>
+  <div class="child-div2">
+    <mat-tab-group>
+      <mat-tab class="header-back"label="All">
+        <cdk-virtual-scroll-viewport itemSize="50" class="view-scroll">
+          <div class="grid-container">
+            <div class="item-card" *cdkVirtualFor="let item of items">
+              <mat-card class="card">
+                <img mat-card-image src={{item.image}} alt="" width="150px" height="200px" style="cursor: pointer;"
+                  (click)="itemDetail(item)"#tooltip="matTooltip"
+                  matTooltip="View Detail" />
+                <div class="details">
+                  <p class="itemdetails">{{item.title}}</p>
+                  <p class="itemdetails">{{item.price |currency:"USD"}}</p>
+                </div>
+                <button mat-raised-button class="cart-btn" color="primary" (click)="addToCart(item)">Add To
+                  Cart</button>
+              </mat-card>
+            </div>
+          </div>
+        </cdk-virtual-scroll-viewport>
+      </mat-tab>
+      <mat-tab label="Men's Cloths">
+        <app-mens-category></app-mens-category>
+      </mat-tab>
+      <mat-tab label="Women's Cloths">
+        <app-womens-category></app-womens-category>
+      </mat-tab>
+      <mat-tab label="Jeweleries">
+        <app-jewelery-category></app-jewelery-category>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

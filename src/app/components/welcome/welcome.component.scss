@@ -1,0 +1,229 @@
+.parent-div {
+  display: flex;
+  background-color: whitesmoke;
+
+  .child-div1 {
+    margin-top: 64px;
+    width: 20%;
+    height: 100vh;
+    background-color:white!important;
+    position: fixed;
+  }
+  .child-div2 {
+    margin-top: 64px;
+    margin-left: 20%;
+    width: 80%;
+    background-color: whitesmoke;
+    .view-scroll{
+      height: 536px; width: 100%; margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .header-back{
+      color: black;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 3fr);
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
+      .item-card {
+
+        .card {
+          background-color: white;
+          color: black;
+          height: 370px;
+          margin-left: 10px;
+          margin-right: 10px;
+
+          .details {
+            height: 100px;
+            .itemdetails {
+              height: 50px;
+              color: black;
+            }
+          }
+          .cart-btn{
+            width: 100%;
+            background-color: black;
+          }
+        }
+      }
+    }
+  }
+}
+.card:hover{
+  z-index:1;
+  box-shadow:0 8px 50px rgba(0,0,0,0.5);
+  transform: scale(1.05);
+}
+@media(max-width:910px){
+  .child-div1{
+    width: 150px;
+  }
+  .child-div2{
+    margin-left: 150px;
+  }
+
+  .grid-container {
+      grid-template-columns: repeat(2, 2fr)!important;
+  }
+
+}
+@media(max-width:720px){
+  .child-div1{
+    width: 0%;
+  }
+  .child-div2{
+    margin-left: 0%;
+    width: 100%;
+  }
+  .card{
+    margin-left: 10px !important;
+    margin-right: 0px;
+    width: 250px;
+  }
+  .grid-container {
+      grid-template-columns: repeat(2, 2fr)!important;
+  }
+}
+@media(max-width:610px){
+  // .child-div1{
+  //   width: 0%;
+  // }
+  // .child-div2{
+  //   margin-left: 0% !important;
+  //   width: 100% !important;
+  // }
+  .card{
+    margin-left: 60px !important;
+    margin-right: 50px;
+    width: 350px !important;
+  }
+  .grid-container {
+      grid-template-columns: repeat(1, 2fr)!important;
+  }
+}
+
+@media(max-width:420px){
+
+  .child-div2{
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+  .card{
+    margin-left: 35px !important;
+    margin-right: 50px;
+    width: 340px !important;
+  }
+  .grid-container {
+      grid-template-columns: repeat(1, 2fr)!important;
+  }
+  .view-scroll{
+    height: 603px !important;
+  }
+}
+@media(max-width:375px){
+
+  .child-div2{
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+  .card{
+    margin-left: 35px !important;
+    margin-right: 50px;
+    width: 303.5px !important;
+  }
+  .grid-container {
+      grid-template-columns: repeat(1, 2fr)!important;
+  }
+  .view-scroll{
+    height: 533px !important;
+  }
+}
+@media(max-width:375px){
+
+  .child-div2{
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+  .card{
+    margin-left: 35px !important;
+    margin-right: 50px;
+    width: 304px !important;
+  }
+  .grid-container {
+      grid-template-columns: repeat(1, 2fr)!important;
+  }
+  .view-scroll{
+    height: 533.5px !important;
+  }
+}
+@media(max-width:360px){
+
+  .child-div2{
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+  .card{
+    margin-left: 35px !important;
+    margin-right: 50px;
+    width: 290px !important;
+  }
+  .grid-container {
+      grid-template-columns: repeat(1, 2fr)!important;
+  }
+  .view-scroll{
+    height: 507px !important;
+  }
+}
+@media(max-width:280px){
+
+  .child-div2{
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+  .card{
+    margin-left: 15px !important;
+    margin-right: 50px;
+    width: 250px !important;
+  }
+  .grid-container {
+      grid-template-columns: repeat(1, 2fr)!important;
+  }
+  .view-scroll{
+    height: 520px !important;
+  }
+}
+@media(max-width:240px){
+
+  .child-div2{
+    margin-left: 0% !important;
+    width: 100% !important;
+  }
+  .card{
+    margin-left: 20px !important;
+    margin-right: 50px;
+    width: 200px !important;
+  }
+  .grid-container {
+      grid-template-columns: repeat(1, 2fr)!important;
+  }
+  .view-scroll{
+    height: 190px !important;
+  }
+}
+.mat-tab-label-container {
+  background-color: rgba(0, 0, 0, 0.493);
+  color:white;
+}
+
+// /* Styles for the active tab label */
+// .mat-tab-label.mat-tab-label-active {
+//   background-color: black;
+//   color: white;
+// }
+
+// /* Styles for the ink bar */
+// .mat-ink-bar {
+//   background-color: white;
+// }

@@ -1,0 +1,32 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  .item-card {
+    margin: 10px;
+    .card {
+      background-color: white;
+      color: black;
+      height: 300px;
+      .details {
+        height: 100px;
+        .itemdetails {
+          height: 50px;
+          color: black;
+        }
+      }
+      .cart-btn{
+        width: 100%;
+        background-color: black;
+      }
+    }
+  }
+}
+
+@media(max-width:910px){
+  .grid-container {
+      grid-template-columns: repeat(2, 330px)!important;
+  }
+
+}

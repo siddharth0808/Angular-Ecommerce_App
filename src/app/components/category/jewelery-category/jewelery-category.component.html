@@ -1,0 +1,16 @@
+<cdk-virtual-scroll-viewport itemSize="50" class="view-scroll">
+  <div class="grid-container">
+    <div class="item-card" *cdkVirtualFor="let item of items">
+      <mat-card class="card">
+        <img mat-card-image src={{item.image}} alt="" width="150px" height="200px" style="cursor: pointer;"
+          (click)="itemDetail(item)" />
+        <div class="details">
+          <p class="itemdetails">{{item.title}}</p>
+          <p class="itemdetails">{{item.price |currency:"USD"}}</p>
+        </div>
+        <button mat-raised-button class="cart-btn" color="primary" (click)="addToCart(item)">Add To
+          Cart</button>
+      </mat-card>
+    </div>
+  </div>
+</cdk-virtual-scroll-viewport>

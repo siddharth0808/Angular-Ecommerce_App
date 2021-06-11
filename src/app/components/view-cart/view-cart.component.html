@@ -1,0 +1,60 @@
+<div class="parent">
+  <div class="child1">
+    <app-sidenave></app-sidenave>
+  </div>
+  <div class="child2">
+    <div class="cart-div">
+      <cdk-virtual-scroll-viewport itemSize="50" class="view-scroll">
+        <div class="item-card">
+          <div *cdkVirtualFor="let item of items">
+            <mat-card class="card">
+              <button
+                #tooltip="matTooltip"
+                matTooltip="Remove Item"
+                class="cart-btn"
+                mat-raised-button
+                color="primary"
+                (click)="removeItem(item)"
+              >
+                <mat-icon>remove_shopping_cart </mat-icon>
+              </button>
+              <img
+                mat-card-image
+                src="{{ item.image }}"
+                alt=""
+                width="150px"
+                height="350px"
+                style="cursor: pointer"
+              />
+              <div class="details">
+                <p class="itemdetails">{{ item.title }}</p>
+                <p class="itemdetails">{{ item.price | currency: "USD" }}</p>
+              </div>
+            </mat-card>
+          </div>
+        </div>
+      </cdk-virtual-scroll-viewport>
+    </div>
+<div class="footer-div">
+  <mat-card class="mat-footer">
+    <div class="footer">
+      <div class="total-amt">
+        Total Amount: {{ totalPrice | currency: "USD" }}
+      </div>
+
+      <div class="buy-btn" align="right">
+        <button
+          class="full-width"
+          mat-raised-button
+          color="primary"
+          (click)="addAddress()"
+        >
+          BUY
+        </button>
+      </div>
+    </div>
+  </mat-card>
+</div>
+
+  </div>
+</div>
