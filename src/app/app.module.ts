@@ -45,6 +45,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { AddAddressComponent } from './components/add-address/add-address.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HeaderFooterComponent } from './components/header-footer/header-footer.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ElectronicCategoryComponent,
     JeweleryCategoryComponent,
     AddNewItemComponent,
-    AddAddressComponent
+    AddAddressComponent,
+    HeaderFooterComponent
   ],
   imports: [
     BrowserModule,
