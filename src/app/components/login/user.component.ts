@@ -31,15 +31,17 @@ export class UserComponent implements OnInit {
     private _snackBar: MatSnackBar,
     private httpservice: HttpserviceService) { }
 
-  ngOnInit(): void { }
-
-  onLogin(form: NgForm) {
-    if (form.value['email'] == "" && form.value['password'] == "") {
-      this.openSnackBar("Please Enter Id/Password", "OK");
+    
+    ngOnInit(): void { 
     }
-    else if (form.value['email'] !== "" && form.value['password'] !== "") {
-      let res = this.httpservice.checkValidation(form.value);
-      if (res) {
+    
+    onLogin(form: NgForm) {
+      if (form.value['email'] == "" && form.value['password'] == "") {
+        this.openSnackBar("Please Enter Id/Password", "OK");
+      }
+      else if (form.value['email'] !== "" && form.value['password'] !== "") {
+        let res = this.httpservice.checkValidation(form.value);
+        if (res) {
         this.openSnackBar("Login Successfully", "OK");
         this.router.navigate(['welcome'], { relativeTo: this.route });
       }
@@ -47,12 +49,12 @@ export class UserComponent implements OnInit {
         this.openSnackBar("Invalid Id/Password Or User does not exist", "OK");
       }
     }
-
-
+    
   }
 
   openSnackBar(message: string, action: string) {
     this._snackBar.open(message, action);
   }
+
 
 }

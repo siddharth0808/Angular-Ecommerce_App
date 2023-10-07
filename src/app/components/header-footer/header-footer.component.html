@@ -1,38 +1,37 @@
 <div class="flex" *ngIf="isMaiHeaderRequired">
-    <mat-toolbar>
-      <button mat-icon-button  class ="btn-menu"aria-label="Example icon-button with menu icon"  (click)="drawer.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>{{title}}</span>
-      <span class="example-spacer"></span>
-      <button class="example-icon favorite-icon btn-visible" mat-button routerLink="home">Home</button>
-      <button class="example-icon favorite-icon btn-visible" mat-button routerLink="login">Login</button>
-      <button class="example-icon favorite-icon btn-visible" mat-button routerLink="signUp">SignUp</button>
-      <button class="example-icon favorite-icon btn-visible" mat-button routerLink="contactus">Contact Us</button>
-      <button class="example-icon favorite-icon btn-visible" mat-button routerLink="aboutUs">About</button>
+  <mat-toolbar>
+    <button mat-icon-button class="btn-menu" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>{{title}}</span>
+    <span class="example-spacer"></span>
+    <button class="example-icon favorite-icon btn-visible" mat-button routerLink="home">Home</button>
+    <button class="example-icon favorite-icon btn-visible" mat-button routerLink="login">Login</button>
+    <button class="example-icon favorite-icon btn-visible" mat-button routerLink="signUp">SignUp</button>
+    <button class="example-icon favorite-icon btn-visible" mat-button routerLink="contactus">Contact Us</button>
+    <button class="example-icon favorite-icon btn-visible" mat-button routerLink="aboutUs">About</button>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"
-    matBadge="{{itemCartCount}}" matBadgeColor="black" (click)="viewCart()"#tooltip="matTooltip"
-    matTooltip="View Cart">
-      <mat-icon >shopping_cart</mat-icon>
+      matBadge="{{itemCartCount}}" matBadgeColor="black" (click)="viewCart()" #tooltip="matTooltip"
+      matTooltip="View Cart">
+      <mat-icon>shopping_cart</mat-icon>
     </button>
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" #tooltip="matTooltip"
-    matTooltip="Share">
+      matTooltip="Share">
       <mat-icon>share</mat-icon>
     </button>
-    </mat-toolbar>
-    <mat-drawer-container class="example-container" autosize>
-    </mat-drawer-container>
-  </div>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <button class="menubtn" mat-button routerLink="home">Home</button>
-    <button class="menubtn" mat-button routerLink="login">Login</button>
-    <button class="menubtn" mat-button routerLink="signUp">SignUp</button>
-    <button class="menubtn" mat-button routerLink="contactus">Contact Us</button>
-    <button class="menubtn" mat-button routerLink="aboutUs">About</button>
-  
-  </mat-drawer>
-  <div>
-  
-    <router-outlet></router-outlet>
-  </div>
-  
+  </mat-toolbar>
+  <mat-drawer-container class="example-container" autosize>
+  </mat-drawer-container>
+</div>
+<mat-drawer #drawer class="example-sidenav" mode="side">
+  <button class="menubtn" mat-button routerLink="home">Home</button>
+  <button class="menubtn" mat-button routerLink="login">Login</button>
+  <button class="menubtn" mat-button routerLink="signUp">SignUp</button>
+  <button class="menubtn" mat-button routerLink="contactus">Contact Us</button>
+  <button class="menubtn" mat-button routerLink="aboutUs">About</button>
+
+</mat-drawer>
+<div>
+
+  <router-outlet></router-outlet>
+</div>
