@@ -9,8 +9,8 @@ import { ViewItemDetailDialogComponent } from 'src/app/components/view-item-deta
   styleUrls: ['./womens-category.component.scss']
 })
 export class WomensCategoryComponent implements OnInit {
-  public womens = "women's clothing"
-  public items:{};
+  public womens = `women's clothing`
+  public items:[];
   constructor(private http:HttpserviceService,public dialog: MatDialog) {
 
   }

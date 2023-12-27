@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header-footer',
@@ -8,9 +9,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeaderFooterComponent implements OnInit {
 
   @Input() isMaiHeaderRequired = false;
-  constructor() { }
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
+  }
+  viewCart(){
+    this.router.navigate(['login/welcome/view-cart'], { relativeTo: this.route });
+
   }
 
 }
